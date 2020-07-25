@@ -9,7 +9,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t your-austinwu666/around .
+          docker build -t austinwu666/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
           docker push austinwu666/around
 
